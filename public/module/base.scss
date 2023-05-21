@@ -1,0 +1,77 @@
+/////////////////////////////
+/* tolken lib 4.0 {        */
+/////////////////////////////
+
+html,body,
+div,span,
+h1,h2,h3,h4,h5,h6,p,
+dl,dt,dd,ol,ul,li,
+a,img,
+table,caption,thead,tbody,tfoot,tr,th,td,
+form,label,fieldset,legend,
+applet,object,iframe,
+pre,abbr,acronym,address,big,cite,code,
+del,dfn,em,font,ins,kbd,s,samp,
+small,strike,strong,sub,sup,tt,var,
+blockquote,q{
+	background:transparent;
+	outline:0;
+	border:0;
+	font-family:inherit;
+	font-size:100%;
+	font-weight:inherit;
+	font-style:inherit;
+	text-align:inherit; //left;
+	vertical-align:inherit; //baseline;
+	padding:0;
+	margin:0;
+}
+html{
+	box-sizing:border-box;
+}
+*,
+*:before,
+*:after{
+	box-sizing:inherit;
+}
+body{
+	background-color:#fff;
+	color:#000;
+	line-height:1.5;
+}
+a{
+	color:blue;
+	text-decoration:none;
+	&:hover{
+		color:red;
+	}
+}
+ol,
+ul{
+	list-style:none;
+}
+table{
+	border-spacing:0;
+	border-collapse:collapse;
+}
+caption,
+th,
+td{
+	text-align:left;
+	vertical-align:top;
+}
+blockquote,
+q{
+	quotes:none;
+	&:before,&:after{
+		content:'';
+		content:none;
+	}
+}
+:focus{ // remember to define focus styles!
+	outline:0;
+}
+
+/////////////////////////////
+/* tolken lib 4.0 }        */
+/////////////////////////////

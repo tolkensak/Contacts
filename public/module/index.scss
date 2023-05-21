@@ -1,0 +1,155 @@
+@import 'base';
+
+$big-font:1.6rem;
+$small-font:0.92rem;
+$fav-icon-size:20px;
+
+@mixin horz-edge(){
+    padding-left:2rem;
+    padding-right:2rem;
+    @media (max-width:575.98px){
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+}
+
+#app{
+    font-family:Arial;
+    padding-bottom:7rem;
+    h1{
+        font-size:$big-font;
+        margin-bottom:1.5rem;
+    }
+    p{
+        line-height:1.5;
+        margin:1rem 0;
+    }
+    #app-banner{
+        padding-top:0.5rem;
+        padding-bottom:1.5rem;
+        @include horz-edge;
+        #app-sign{
+            font-size:$small-font;
+            text-align:right;
+            margin-bottom:0.5rem;
+            .user-icon{
+                vertical-align:-1px;
+                height:14px;
+            }
+        }
+        #app-logo{
+            display:inline-block;
+            font-size:$big-font;
+            font-weight:bold;
+        }
+        #app-stack{
+            display:inline-block;
+            font-size:$small-font;
+            margin-left:1rem;
+        }
+    }
+    #app-nav{
+        background-color:#eee;
+        padding:1rem;
+        @include horz-edge;
+        a{
+            &+a{
+                margin-left:1.5rem;
+            }
+        }
+    }
+    #app-body{
+        padding:2rem;
+		margin:0 auto;
+        @include horz-edge;
+        &.narrow{
+            @media (min-width:576px){
+                width:400px;
+            }
+        }
+    }
+    .form-group{
+        margin:1.5rem 0;
+    }
+    .form-group-last{
+        text-align:right;
+        margin-top:2rem;
+    }
+    label{
+        display:block;
+        margin-bottom:5px
+    }
+    input[type='text'],
+    input[type='password']{
+        border:solid #d0d0d0 1px;
+        padding:7px;
+        width:100%;
+    }
+    button[type='submit']{
+        padding:7px 21px;
+    }
+    .error{
+        color:red;
+    }
+    .field-error{
+        color:red;
+        font-size:$small-font;
+        text-align:right;
+        margin-top:3px;
+    }
+    .fav-icon{
+        height:$fav-icon-size;
+    }
+    .info-bar{
+        border-bottom:solid 1px #ddd;
+        vertical-align:middle;
+        padding-bottom:1rem;
+        margin-bottom:3rem;
+        img{
+            margin-right:0.5rem;
+        }
+        .info{
+            font-size:$small-font;
+            margin-top:0.5rem;
+        }
+        .statis{
+            margin:1rem 0;
+        }
+    }
+    .contacts{
+        display:grid;
+        @media (max-width:575.98px){
+            grid:auto/auto auto;
+        }
+        @media (min-width:576px){
+            grid:auto/repeat(auto-fill, minmax(200px, 1fr));
+        }
+        gap:3rem 1rem;
+        justify-content:space-between;
+        align-content:start;
+    }
+    .contact{
+        text-align:center;
+        overflow:hidden;
+        .row-photo{
+            height:60px;
+            img{
+                height:100%;
+            }
+        }
+        .row-name{
+            font-weight:bold;
+            margin-top:0.5rem;
+        }
+        .row-btns{
+            margin:0.5rem 0;
+        }
+        .btn{
+            cursor:pointer;
+        }
+    }
+    .note{
+        font-size:$small-font;
+        margin:2rem 0;
+    }
+}
