@@ -60,6 +60,24 @@
 
 1. База данных
 
-Сервер БД: сервер MySQL 8.0.33
+- Сервер БД: сервер MySQL 8.0.33
 
-Дамп БД: [contacts.sql](/contacts.sql)
+- Дамп БД: [contacts.sql](/contacts.sql)
+
+- Данные подключения MySQL: [include/contacts.php](/include/contacts.php)
+
+2. Используется AJAX для сохранения контактов, выбранных пользователем
+
+![fav_contacts](/screenshot/ajax_fav_update.jpg)
+
+3. Выполнена валидация данных
+
+![fav_contacts](/screenshot/validation_required_field_2.jpg)
+
+![fav_contacts](/screenshot/validation_required_field_1.jpg)
+
+![fav_contacts](/screenshot/validation_incorrect_data.jpg)
+
+![fav_contacts](/screenshot/validation_pass_not_match.jpg)
+
+![fav_contacts](/screenshot/validation_already_exists.jpg)
