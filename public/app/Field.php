@@ -19,7 +19,7 @@ class Field
     public function testForEmpty() : bool
     {
         if ($this->value==='') {
-            $this->error='cannot be empty!';
+            $this->error='Это обязательное поле!';
             return false;
         }
 
