@@ -45,7 +45,7 @@ class Contacts
             $conn->free_result();
         }
         else {
-            echo '<p class="error">Error '. $conn->errno.'<br>'.hsc($conn->error).'</p>';
+            echo '<p class="error">Error '. $conn->errno.': '.hsc($conn->error).'</p>';
         }
     }
 }
