@@ -89,11 +89,11 @@
 
 1. База данных
 
-    - Сервер БД: сервер MySQL 8.0.33
+    - Сервер БД: MySQL 8.0.33
 
     - Дамп БД: [contacts.sql](/contacts.sql)
 
-    - Данные подключения MySQL: [include/contacts.php](/include/contacts.php)
+    - Данные подключения: [contacts.php](/include/contacts.php)
 
 2. AJAX используется для сохранения выбранных контактов в базе данных
 
