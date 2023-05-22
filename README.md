@@ -1,23 +1,19 @@
 
-</br>
-
 # Contacts
 
 Технологический стек
 
-- PHP 8.2
+* PHP 8.2
 
-- MySQL 8.0
+* MySQL 8.0
 
-- Javascript >ES6
+* Javascript >ES6
 
-- SASS/SCSS, CSS
+* CSS, SASS/SCSS
 
-</br>
+&nbsp;
 
 ## 1. Техническое задание (ТЗ)
-
-</br>
 
 ### 1.1. Работа с пользователем
 
@@ -29,15 +25,11 @@
 
 4. Незарегистрированным пользователям доступна только страница регистрации/ авторизации.
 
-</br>
-
 ### 1.2. Создание контактов в системе (общие и личные)
 
 1. Необходимо придумать и разместить на главной странице проекта произвольный «общий список контактов», который будет доступен каждому авторизованному пользователю в системе. (достаточно заполнить 10-15 произвольных контактов)
 
 2. Добавить возможность сохранения в личные контакты пользователя контактов из общего списка (раздел избранное)
-
-</br>
 
 ### 1.3. Результатом выполнения всех частей ТЗ должны стать
 
@@ -47,43 +39,49 @@
 
 3. Раздел избранных контактов пользователя - должен быть разным для каждого авторизованного пользователя.
 
-</br>
+&nbsp;
 
 ## 2. Выполненный проект
 
-</br>
-
 ### 2.1. Работа с пользователем
 
-1. СДЕЛАНО: Создание системы регистрации пользователя в проекте (кол-во информации о пользователе не важно)
+1. СДЕЛАНО Создание системы регистрации пользователя в проекте (кол-во информации о пользователе не важно)
 
-![signup](/screenshot/signup.jpg)
+![signup](screenshot/signup.jpg)
 
-2. СДЕЛАНО: Создание системы авторизации пользователя в проекте
+&nbsp;
 
-![signin](/screenshot/signin.jpg)
+2. СДЕЛАНО Создание системы авторизации пользователя в проекте
 
-3. СДЕЛАНО: Создание закрытой части проекта, доступной только после авторизации
+![signin](screenshot/signin.jpg)
 
-![closed](/screenshot/closed.jpg)
+&nbsp;
 
-4. СДЕЛАНО: Незарегистрированным пользователям доступна только страница регистрации/ авторизации.
+3. СДЕЛАНО Создание закрытой части проекта, доступной только после авторизации
 
-![permit](/screenshot/permit.jpg)
+![closed](screenshot/closed.jpg)
 
-</br>
+&nbsp;
+
+4. СДЕЛАНО Незарегистрированным пользователям доступна только страница регистрации/ авторизации.
+
+![permit](screenshot/permit.jpg)
+
+&nbsp;
 
 ### 2.2. Создание контактов в системе (общие и личные)
 
-1. СДЕЛАНО: Необходимо придумать и разместить на главной странице проекта произвольный «общий список контактов», который будет доступен каждому авторизованному пользователю в системе. (достаточно заполнить 10-15 произвольных контактов)
+1. СДЕЛАНО Необходимо придумать и разместить на главной странице проекта произвольный «общий список контактов», который будет доступен каждому авторизованному пользователю в системе. (достаточно заполнить 10-15 произвольных контактов)
 
-![all_contacts](/screenshot/all_contacts.jpg)
+![all_contacts](screenshot/all_contacts.jpg)
 
-2. СДЕЛАНО: Добавить возможность сохранения в личные контакты пользователя контактов из общего списка (раздел избранное)
+&nbsp;
 
-![fav_contacts](/screenshot/fav_contacts.jpg)
+2. СДЕЛАНО Добавить возможность сохранения в личные контакты пользователя контактов из общего списка (раздел избранное)
 
-</br>
+![fav_contacts](screenshot/fav_contacts.jpg)
+
+&nbsp;
 
 ### 2.3. Дополнительная информация
 
@@ -91,22 +89,26 @@
 
     - Сервер БД: MySQL 8.0.33
 
-    - Дамп БД: [contacts.sql](/contacts.sql)
+    - Дамп БД: [contacts.sql](contacts.sql)
 
-    - Данные подключения: [contacts.php](/include/contacts.php)
+    - Данные подключения: [contacts.php](include/contacts.php)
+
+&nbsp;
 
 2. AJAX используется для сохранения выбранных контактов в базе данных
 
-![fav_contacts](/screenshot/ajax_fav_update.jpg)
+![fav_contacts](screenshot/ajax_fav_update.jpg)
+
+&nbsp;
 
 3. Валидация данных
 
-![fav_contacts](/screenshot/validation_required_field_2.jpg)
+![validation_required_field_2](screenshot/validation_required_field_2.jpg)
 
-![fav_contacts](/screenshot/validation_required_field_1.jpg)
+![validation_required_field_1](screenshot/validation_required_field_1.jpg)
 
-![fav_contacts](/screenshot/validation_incorrect_data.jpg)
+![validation_incorrect_data](screenshot/validation_incorrect_data.jpg)
 
-![fav_contacts](/screenshot/validation_pass_not_match.jpg)
+![validation_pass_not_match](screenshot/validation_pass_not_match.jpg)
 
-![fav_contacts](/screenshot/validation_already_exists.jpg)
+![validation_already_exists](screenshot/validation_already_exists.jpg)
