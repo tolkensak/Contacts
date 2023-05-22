@@ -3,15 +3,15 @@
 
 # Contacts
 
-Технологический стек:
+Технологический стек
 
-    - PHP 8.2
+    * PHP 8.2
 
-    - MySQL 8.0.33
+    * MySQL 8.0.33
 
-    - Javascript >ES6
+    * Javascript >ES6
 
-    - SASS/SCSS
+    * SASS/SCSS
 
 </br>
 
