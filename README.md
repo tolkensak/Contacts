@@ -1,5 +1,11 @@
 # Contacts
 
+Технологический стек:
+    - PHP 8.2
+    - MySQL 8.0.33
+    - Javascript >ES6
+    - SASS/SCSS
+
 </br>
 
 ## 1. Техническое задание (ТЗ)
