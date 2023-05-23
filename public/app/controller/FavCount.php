@@ -1,8 +1,8 @@
 <?php
 namespace App\Controller;
 
-use App\Sess;
-use App\Conn;
+use App\Session;
+use App\Connection;
 use App\Controller;
 
 class FavCount extends Controller
@@ -12,7 +12,7 @@ class FavCount extends Controller
         $contactid=$_GET['contactid'];
         $fav=$_GET['fav'];
 
-        Conn::inst()->query('call sp_fav('.Sess::inst()->userid().', '.$contactid.', '.$fav.')');
+        Connection::inst()->query('call sp_fav('.Session::inst()->userid().', '.$contactid.', '.$fav.')');
         exit;
    }
 }

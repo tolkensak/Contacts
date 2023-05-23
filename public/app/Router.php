@@ -3,7 +3,7 @@ namespace App;
 
 use App\Sole;
 use App\Route;
-use App\Sess;
+use App\Session;
 
 class Router
 {
@@ -26,7 +26,7 @@ class Router
         $uniq=$_GET['route']??'';
 
         if ($uniq==='') {
-            $uniq=Sess::inst()->userid()===''?'signin':'home';
+            $uniq=Session::inst()->userid()===''?'signin':'home';
         }
 
         if (!array_key_exists($uniq, $this->routes)) {

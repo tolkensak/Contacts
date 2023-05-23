@@ -3,7 +3,7 @@ namespace App;
 
 use App\Sole;
 
-class Sess
+class Session
 {
     use Sole;
 

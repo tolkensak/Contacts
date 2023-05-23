@@ -1,8 +1,8 @@
 <?php
 namespace App\Controller;
 
-use App\Sess;
-use App\Conn;
+use App\Session;
+use App\Connection;
 use App\Controller;
 use function App\redirect;
 
@@ -34,7 +34,7 @@ class Signup extends Controller
 
         if ($this->checkFields()) {
             $ok=false;
-            $conn=Conn::inst();
+            $conn=Connection::inst();
 
             if ($res=$conn->query('call sp_signup('.
                 '"'.$conn->real_escape_string($this->field('fname')->value).'",'.
@@ -52,7 +52,7 @@ class Signup extends Controller
             }
 
             if ($ok) {
-                Sess::inst()->signin($row['id'], $this->field('fname')->value);
+                Session::inst()->signin($row['id'], $this->field('fname')->value);
                 redirect('?route=home');
             }
             else if ($conn->errno == 1062) {

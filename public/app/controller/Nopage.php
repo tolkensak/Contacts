@@ -1,7 +1,7 @@
 <?php
 namespace App\Controller;
 
-use App\Sess;
+use App\Session;
 use App\Controller;
 
 class Nopage extends Controller

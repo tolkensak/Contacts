@@ -1,8 +1,8 @@
 <?php
 namespace App;
 
-use App\Sess;
-use App\Conn;
+use App\Session;
+use App\Connection;
 use function App\hsc;
 
 class Contacts
@@ -18,8 +18,8 @@ class Contacts
 
     public static function printList(string $whois) : void
     {
-        $conn=Conn::inst();
-        if ($res=$conn->query('call sp_'.$whois.'('.Sess::inst()->userid().')')) {
+        $conn=Connection::inst();
+        if ($res=$conn->query('call sp_'.$whois.'('.Session::inst()->userid().')')) {
             echo '<div class="info-bar">';
             echo '<div class="statis"><img class="fav-icon" src="image/fav-1.png"> <span id="fav-count"></span> / <span>'.$res->num_rows.'</span></div>';
             echo '<div class="info">Вы можете выбрать или отменить выбор, нажав значок сердца под его / ее именем.</span></div>';

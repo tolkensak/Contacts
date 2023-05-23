@@ -4,7 +4,7 @@ namespace App;
 require_once 'global.php';
 require_once 'settings.php';
 
-$sess=Sess::inst();
+$sess=Session::inst();
 $router=Router::inst();
 
 $controller=new ("App\\Controller\\".$router->activeRoute->uniq);
